@@ -22,12 +22,16 @@ npm install biojs-events --save
 
 After the code of your BioJS component add the events capability by mixing you component object with the events:
 
+```
 require('biojs-events').mixin(my_component);
+```
 
 ### 3. Trigger events
 
 Now in your code you can use the events methods (trigger, off,on,once):
 
+```
 self.trigger('onSomethingChanged', {
  data : "some data to include in your event"
 });
+```
