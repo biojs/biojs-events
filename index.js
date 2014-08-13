@@ -6,9 +6,11 @@ events.onAll = function(callback,context){
 };
 
 // Mixin utility
+events.oldMixin = events.mixin;
 events.mixin = function(proto) {
-  var exports = ['on', 'once', 'off', 'trigger', 'onAll', 'stopListening', 'listenTo',
-  'listenToOnce', 'bind', 'unbind'];
+  events.oldMixin(proto);
+  // add custom onAll
+  var exports = ['onAll'];
   for(var i=0; i < exports.length;i++){
     var name = exports[i];
     proto[name] = this[name];

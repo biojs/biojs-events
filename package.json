@@ -1,6 +1,6 @@
 {
   "name": "biojs-events",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "BioJS event system",
   "main": "index.js",
   "scripts": {
