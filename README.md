@@ -15,6 +15,7 @@ Please provide
 objs.on("name", function(data) {})
 objs.off("name", function(data) {})
 objs.once("name", function(data) {})
+objs.trigger("name", function(data) {})
 objs.onAll(function(eventName, data) {})   // (optional)
 ```
 
