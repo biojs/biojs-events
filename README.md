@@ -48,10 +48,10 @@ npm install biojs-events --save
 
 ### 2. Mix the events capability with your object 
 
-After the code of your BioJS component add the events capability by mixing you component object with the events:
+After the code of your BioJS component add the events capability by mixing you component prototype with the event class
 
 ```
-require('biojs-events').mixin(my_component);
+require('biojs-events').mixin(my_component.prototype);
 ```
 
 ### 3. Trigger events
